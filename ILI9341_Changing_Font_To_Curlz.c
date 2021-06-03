@@ -1,6 +1,23 @@
-/*//GLCD FontName : Segment1416x22
-//GLCD FontSize : 16 x 22 SET FONT WIDTH TO 15 AND HEIGHT TO 22
-const unsigned short Number_Font[] = {   //  44 Long  2 Bytes 16 Pixels Wide
+                                                   /*Anyone is free to copy, modify, publish, use, compile or
+                                                    distribute this software, either in source code form or as a compiled
+                                                    binary, for non-commercial use only. (i.e. YOU MAY NOT SELL IT)
+                                                    John B 03/06/2021
+
+                                                    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+                                                    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+                                                    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+                                                    IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+                                                    OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+                                                    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+                                                    OTHER DEALINGS IN THE SOFTWARE.*/
+                                                    
+                                                    
+                                                    
+
+
+/*//FontName : Segment1416x22
+//FontSize : 16 x 22 SET FONT WIDTH TO 15 AND HEIGHT TO 22
+const unsigned short Number_Font[] = {   //  44 Bytes Long  2 Bytes = 16 Pixels Wide
 
    0xFE,0x3F,0xFD,0x5F,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x01,0x40,0x02,0x20,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0xFD,0x5F,0xFE,0x3F, // Code for char num 48 0   0 to 44
    0x80,0x00,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x00,0x01,0x80,0x00,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x01,0x80,0x00, // Code for char num 49 1   44 to 88
@@ -12,56 +29,25 @@ const unsigned short Number_Font[] = {   //  44 Long  2 Bytes 16 Pixels Wide
    0xFF,0x3F,0xFE,0x5F,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x40,0x00,0x20,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x40, // Code for char num 55 7   308 to 352
    0xFE,0x3F,0xFD,0x5F,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0xFD,0x3F,0xFE,0x5F,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0xFD,0x5F,0xFE,0x3F, // Code for char num 56 8   352 to 396
    0xFE,0x3F,0xFD,0x5F,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0xFD,0x3F,0xFE,0x5F,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0x00,0x60,0xFE,0x5F,0xFF,0x3F,  // Code for char num 57 9   396 to 440
-   0xBE,0x3F,0x7D,0x5F,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x7D,0x5F,0xBE,0x3F,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x01,0x40, // Code for char num 65  A
-   0xBF,0x3F,0x7E,0x5F,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0x40,0x5F,0x80,0x3F,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0x7E,0x5F,0xBF,0x3F, // Code for char num 66  B
-   0xBE,0x7F,0x7D,0x3F,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x01,0x00,0x02,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x7D,0x3F,0xBE,0x7F, // Code for char num 67  C
-   0xBF,0x3F,0x7E,0x5F,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0x40,0x20,0x80,0x40,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0x7E,0x5F,0xBF,0x3F, // Code for char num 68  D
-   0xBE,0x7F,0x7D,0x3F,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0xBD,0x3F,0x7E,0x1F,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x7D,0x3F,0xBE,0x7F, // Code for char num 69  E
-   0xBE,0x7F,0x7D,0x3F,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0xBD,0x07,0x7E,0x03,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x01,0x00 // Code for char num 70   F
-};*/
+};
+
+const unsigned char Number_Font_Start = 0;
+const unsigned char Number_Font_Length_Bytes = 44; //Segment1416x22 example on Youtube
+const unsigned char Number_Font_Width = 16;      // full bytes of pixels   8,16,24,30 etc
+const unsigned char Number_Font_Height = 22;
+const unsigned char Number_Font_Spacing = 1;*/
+
+
+
+                                         //--------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+//FontName : Curlz_MT24x33
+//FontSize : 24 x 33
 
-
-
-//GLCD FontName : Segment1415x22
-//GLCD FontSize : 16 x 22
-
-const unsigned short Segment1415x22[] = { //ASCCI 65 TO 70 A TO F
-
-   0xBE,0x3F,0x7D,0x5F,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x7D,0x5F,0xBE,0x3F,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x03,0x60,0x01,0x40, // Code for char num 65  A
-   0xBF,0x3F,0x7E,0x5F,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0x40,0x5F,0x80,0x3F,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0x7E,0x5F,0xBF,0x3F, // Code for char num 66  B
-   0xBE,0x7F,0x7D,0x3F,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x01,0x00,0x02,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x7D,0x3F,0xBE,0x7F, // Code for char num 67  C
-   0xBF,0x3F,0x7E,0x5F,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0x40,0x20,0x80,0x40,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0xC0,0x60,0x7E,0x5F,0xBF,0x3F, // Code for char num 68  D
-   0xBE,0x7F,0x7D,0x3F,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0xBD,0x3F,0x7E,0x1F,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x7D,0x3F,0xBE,0x7F, // Code for char num 69  E
-   0xBE,0x7F,0x7D,0x3F,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0xBD,0x07,0x7E,0x03,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x03,0x00,0x01,0x00 // Code for char num 70   F
-        };
-
-
-//GLCD FontSize : 16 x 22   LETTER X
-
-const unsigned short Segment_X[44] = {
-
-   0x00,0x00,0x00,0x00,0x0C,0x30,0x0C,0x30,0x18,0x18,0x18,0x18,0x30,0x0C,0x30,0x0C,0x60,0x06,0x60,0x06,0xC0,0x03,0xC0,0x03,0x60,0x06,0x60,0x06,0x30,0x0C,0x30,0x0C,0x18,0x18,0x18,0x18,0x0C,0x30,0x0C,0x30,0x00,0x00,0x00,0x00 // Code for char num 88 x
-
-        };
-
-
-
-
-
-
-
-//Font Generated by MikroElektronika GLCD Font Creator 1.2.0.0
-//MikroElektrnika 2011
-//http://www.mikroe.com
-
-//GLCD FontName : Curlz_MT24x33
-//GLCD FontSize : 24 x 33
-
-const unsigned short Number_Font[] = {  //99 bytes                                                         //
+const unsigned short Number_Font[] = {  //99 bytes
 
    0x00,0x00,0x00,0x00,0x1C,0x00,0x00,0x0E,0x00,0x80,0xFF,0x01,0xC0,0x8D,0x03,0xE0,0x06,0x07,0xE0,0xFB,0x0E,0x70,0xFF,0x1D,0x78,0xCF,0x3D,0x3C,0xC3,0x3D,0x3C,0xE6,0x78,0x3E,0x7C,0x78,0x1E,0x00,0xF8,0x1E,0x00,0xF0,0x1F,0x00,0xF0,0x1F,0x00,0xF0,0x1F,0x00,0xF0,0x1F,0x00,0xF0,0x1F,0x00,0xF0,0x1F,0x00,0x70,0x1F,0x00,0x70,0x1F,0x00,0x70,0x1E,0x00,0x38,0x3E,0x00,0x38,0x3E,0x00,0x38,0x3C,0x00,0x18,0x3C,0x00,0x1C,0x78,0x00,0x0C,0xF0,0x00,0x06,0xE0,0x00,0x03,0xC0,0x81,0x03,0x80,0xC7,0x00,0x00,0x7E,0x00, // Code for char num 48
    0x00,0x30,0x00,0x78,0x3C,0x00,0x68,0x3E,0x00,0x88,0x3F,0x00,0xF8,0x3E,0x00,0x00,0x3E,0x00,0x00,0x3E,0x00,0x00,0x3E,0x00,0x00,0x3E,0x00,0x00,0x3C,0x00,0x00,0x3C,0x00,0x00,0x3C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x1C,0x00,0x00,0x18,0x00,0x00,0x18,0x00,0x00,0x18,0x00,0x00,0x18,0x00,0x00,0x18,0x00,0x00,0xD8,0x03,0x00,0x7E,0x00,0xC0,0x03,0x00,0x60,0x00,0x00, // Code for char num 49
@@ -77,11 +63,10 @@ const unsigned short Number_Font[] = {  //99 bytes                              
 
 
 const unsigned char Number_Font_Start = 0;
-const unsigned char Number_Font_Length_Bytes = 99;
+const unsigned char Number_Font_Length_Bytes = 99; //Curlz_MT24x33 as shown on Youtube
 const unsigned char Number_Font_Width = 24;      // full bytes of pixels   8,16,24 etc
 const unsigned char Number_Font_Height = 33;
 const unsigned char Number_Font_Spacing = 1;
-
 
 
 const unsigned char Black = 0;
@@ -148,8 +133,6 @@ void TFT_Write_Data_ST7735S(unsigned int _data) {
   TFT_CS = 1;
 }
 
-
-
 static void Init_MCU() {
 
      ANSELA = 0;
@@ -173,9 +156,7 @@ static void Init_MCU() {
      TRISJ = 0;
      TRISK = 0;
 
-
-    PORTA=0;PORTB=0;PORTC=0;PORTD=0;PORTE=0;PORTF=0;PORTG=0; PORTH=0; PORTJ=0;  PORTK=0;
-
+   PORTA=0;PORTB=0;PORTC=0;PORTD=0;PORTE=0;PORTF=0;PORTG=0; PORTH=0; PORTJ=0;  PORTK=0;
 
    //   PERIPHERAL MODULE DISABLE BITS AND LOCATIONS(1)   page 588 data sheet
       PMD1SETbits.ADCMD =1;
@@ -239,6 +220,7 @@ static void Init_MCU() {
 }
 
 
+
 void Initialize_Display(){
       //------------------------------------ILI9341 Reset Sequence-----------------------------------------//
        TFT_RST = 1;
@@ -248,8 +230,8 @@ void Initialize_Display(){
        TFT_RST = 1;
        Delay_ms(120);
 
-     //   TFT_Write_Command_ST7735S(0x01); //Software Reset
-     //     Delay_5ms();
+        TFT_Write_Command_ST7735S(0x01); //Software Reset
+        Delay_ms(5);
         TFT_Write_Command_ST7735S(0x28); //Display Off
 
        TFT_Write_Command_ST7735S(0xC0);  // Power Control 1 PAGE 178 FOR VOLTAGE SELECTION
@@ -284,19 +266,15 @@ void Initialize_Display(){
        TFT_Write_Data_ST7735S(0x00);   //DIVA [1:0] : division ratio for internal clocks when Normal mode.  00 = NO DIVISION
        TFT_Write_Data_ST7735S(0x1B);  //NORMAL MODE  0x1B 70 Hz(default)    0X13 = 100 Hz  0X17 = 83 Hz
 
-          TFT_Write_Command_ST7735S(0x36);  //MX, MY, RGB mode
-          TFT_Write_Data_ST7735S(45);  //45 = TOP = CABLE AT TOP   235 CABLE AT BOTTOM
-
-
-
+       TFT_Write_Command_ST7735S(0x36);  //MX, MY, RGB mode
+       TFT_Write_Data_ST7735S(45);  //45 = TOP = CABLE AT TOP   235 CABLE AT BOTTOM
 
         TFT_Write_Command_ST7735S(0xF2);
         TFT_Write_Data_ST7735S(0x08);
         TFT_Write_Command_ST7735S(0x26);
         TFT_Write_Data_ST7735S(0x01);   //1, 2 4 8
 
-
-     //------------------------------------ILI9341 Gamma Sequence End-----------------------------------------//
+     //------------------------------------ST7735S Gamma Sequence End-----------------------------------------//
         TFT_Write_Command_ST7735S(0xE0);  //  Positive Gamma Correction PAGE 87 /////DATASHEET SETTINGS BELOW////BRIGHTER///////////////
         TFT_Write_Data_ST7735S(0x08);
         TFT_Write_Data_ST7735S(0x0E);
@@ -342,19 +320,9 @@ void Initialize_Display(){
 
         TFT_Write_Command_ST7735S(0x13);   //Normal Mode
         TFT_Write_Command_ST7735S(0x38);   //Idle Mode Off
-        // TFT_Write_Command_ST7735S(0x39);   // Idle Mode ON (39h) FULL RGB
         TFT_Write_Command_ST7735S(0x29);   //Display on
-
-
-      // TFT_Write_Command_ST7735S(0x28);   //Display OFF
-
-      // TFT_Write_Command_ST7735S(0x21); //:Display Inversion On
-
-     //  TFT_Write_Command_ST7735S(0x20); //: Display Inversion Off
-    // 10.1 System Function Command List and Description  PAGE 83 ILI9341
-
 }
-                                                     //  Number_Font_Width=16
+
 
 void Set_Display_Number_Font(unsigned int X_Position, unsigned char Y_Position){
 
@@ -551,224 +519,22 @@ Get_Pixel_Colour(unsigned int Set_Colour){
 
 }
 
-void Write_Number_Space(unsigned int X_Position, unsigned char Y_Position, unsigned int Colour){
-     static unsigned int y;
-     static unsigned int i=1;
-     static unsigned int Pixel_Colour = 0x00 | Colour;
-     Get_Pixel_Colour(Pixel_Colour);
-     Set_Display_Number_Font(X_Position,Y_Position);
 
-     for (y=0; y<Number_Font_Height+1; y++){
-     for(i=0;i<Number_Font_width;i++){                    //16 X 22 SPACE
-     TFT_Write_Data_ST7735S(Pixelc);
-     TFT_Write_Data_ST7735S(Pixeld);  }}
-}
-
-
-void Write_Number_F(unsigned int X_Position, unsigned char Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout=0;
-     static unsigned int i=1;
+void Write_Number_Space(unsigned int X_Position, unsigned int Y_Position){
+     static unsigned int Colour;
      static unsigned int jj=0;
-     static unsigned int Pixel_Colour = 0x00 | Colour;
 
-     Get_Pixel_Colour(Pixel_Colour);
+     Get_Pixel_Colour(Colour);
      Set_Display_Number_Font(X_Position,Y_Position);
+     TFT_CS = 0;
 
-     for (jj=Number_Font_Length_Bytes*15; jj<Number_Font_Length_Bytes*16; jj++){
+     for (jj=0; jj<Number_Font_Length_Bytes*8; jj++){    //Space
 
-         for (x=0; x<8; x++){
+      TFT_Write_Data_ST7735S(Pixelc);
+      TFT_Write_Data_ST7735S(Pixeld);
+      }
 
-         dataout = Number_Font[jj] &i;
-
-         if (dataout >=1){                 //Number F
-         Pixel();
-         } else  { Space(); }
-
-          i=i<<1;
-
-          if (i>=256){
-               i=1;}
-         }
-     }
-}
-
-
-void Write_X(unsigned int X_Position, unsigned char Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout=0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     static unsigned int Pixel_Colour = 0x00 | Colour;
-
-     Get_Pixel_Colour(Pixel_Colour);
-     Set_Display_Number_Font(X_Position,Y_Position);
-
-     for (jj=0; jj<Number_Font_Length_Bytes; jj++){
-
-         for (x=0; x<8; x++){
-
-         dataout = Segment_X[jj] &i;
-
-         if (dataout >=1){                 //Number F
-         Pixel();
-         } else  { Space(); }
-
-          i=i<<1;
-
-          if (i>=256){
-               i=1;}
-         }
-     }
-}
-
-
-void Write_Number_E(unsigned int X_Position, unsigned char Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout=0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     static unsigned int Pixel_Colour = 0x00 | Colour;
-
-     Get_Pixel_Colour(Pixel_Colour);
-     Set_Display_Number_Font(X_Position,Y_Position);
-
-     for (jj=Number_Font_Length_Bytes*14; jj<Number_Font_Length_Bytes*15; jj++){
-
-         for (x=0; x<8; x++){
-
-         dataout = Number_Font[jj] &i;
-
-         if (dataout >=1){                 //Number E
-         Pixel();
-         } else  { Space(); }
-
-          i=i<<1;
-
-          if (i>=256){
-               i=1;}
-         }
-     }
-}
-
-
-
-void Write_Number_D(unsigned int X_Position, unsigned char Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout=0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     static unsigned int Pixel_Colour = 0x00 | Colour;
-
-     Get_Pixel_Colour(Pixel_Colour);
-     Set_Display_Number_Font(X_Position,Y_Position);
-
-     for (jj=Number_Font_Length_Bytes*13; jj<Number_Font_Length_Bytes*14; jj++){
-
-         for (x=0; x<8; x++){
-
-         dataout = Number_Font[jj] &i;
-
-         if (dataout >=1){                 //Number D
-         Pixel();
-         } else  { Space(); }
-
-          i=i<<1;
-
-          if (i>=256){
-               i=1;}
-         }
-     }
-}
-
-
-
-void Write_Number_C(unsigned int X_Position, unsigned char Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout=0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     static unsigned int Pixel_Colour = 0x00 | Colour;
-
-     Get_Pixel_Colour(Pixel_Colour);
-     Set_Display_Number_Font(X_Position,Y_Position);
-
-     for (jj=Number_Font_Length_Bytes*12; jj<Number_Font_Length_Bytes*13; jj++){
-
-         for (x=0; x<8; x++){
-
-         dataout = Number_Font[jj] &i;
-
-         if (dataout >=1){                 //Number C
-         Pixel();
-         } else  { Space(); }
-
-          i=i<<1;
-
-          if (i>=256){
-               i=1;}
-         }
-     }
-}
-
-
-
-
-void Write_Number_B(unsigned int X_Position, unsigned char Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout=0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     static unsigned int Pixel_Colour = 0x00 | Colour;
-
-     Get_Pixel_Colour(Pixel_Colour);
-     Set_Display_Number_Font(X_Position,Y_Position);
-
-     for (jj=Number_Font_Length_Bytes*11; jj<Number_Font_Length_Bytes*12; jj++){
-
-         for (x=0; x<8; x++){
-
-         dataout = Number_Font[jj] &i;
-
-         if (dataout >=1){                 //Number B
-         Pixel();
-         } else  { Space(); }
-
-          i=i<<1;
-
-          if (i>=256){
-               i=1;}
-         }
-     }
-}
-
-
-void Write_Number_A(unsigned int X_Position, unsigned char Y_Position, unsigned int Colour){
-     static unsigned char x=0;
-     static unsigned char dataout=0;
-     static unsigned int i=1;
-     static unsigned int jj=0;
-     static unsigned int Pixel_Colour = 0x00 | Colour;
-
-     Get_Pixel_Colour(Pixel_Colour);
-     Set_Display_Number_Font(X_Position,Y_Position);
-
-     for (jj=Number_Font_Length_Bytes*10; jj<Number_Font_Length_Bytes*11; jj++){
-
-         for (x=0; x<8; x++){
-
-         dataout = Number_Font[jj] &i;
-
-         if (dataout >=1){                 //Number A
-         Pixel();
-         } else  { Space(); }
-
-          i=i<<1;
-
-          if (i>=256){
-               i=1;}
-         }
-     }
+     TFT_CS = 1;
 }
 
 
@@ -1061,11 +827,20 @@ void Write_Number_Zero(unsigned int X_Position, unsigned char Y_Position, unsign
      }
 }
 
+   unsigned char DoneOne   = 1;
+   unsigned char DoneTwo   = 1;
+   unsigned char DoneThree = 1;
+   unsigned char DoneFour  = 1;
+   unsigned char DoneFive  = 1;
+   unsigned char DoneSix   = 1;
+   unsigned char DoneSeven = 1;
+   unsigned char DoneEight = 1;
+   unsigned char DoneNine  = 1;
+   unsigned char  ValidEight = 0, ValidSeven = 0, ValidSix = 0, ValidFive = 0, ValidFour = 0, ValidThree = 0, ValidTwo = 0, ValidOne = 0, ValidZero = 0;
 
-void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Position, unsigned char Font_Colour) {
+Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Position, unsigned char Font_Colour) {
 
-   unsigned char Font_Width;
-   unsigned char  valid8=1, valid7=1, valid6=1, valid5=1, valid4=0, valid3=0, valid2=0, valid1=0, valid0=0;
+   unsigned int Font_Width;
    unsigned int units_start;
    unsigned int tens_start;
    unsigned int hundreds_start;
@@ -1076,15 +851,6 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
    unsigned int ten_million_start;
    unsigned int hundred_million_start;
    unsigned int Billion_Start;
-   unsigned char done1 = 0;
-   unsigned char done2 = 0;
-   unsigned char done3 = 0;
-   unsigned char done4 = 0;
-   unsigned char done5 = 0;
-   unsigned char done6 = 0;
-   unsigned char done7 = 0;
-   unsigned char done8 = 0;
-   unsigned char done9 = 0;
    unsigned char Colour;
    static unsigned char numberstring[14];
    Colour = 0x00 | Font_Colour;
@@ -1094,17 +860,26 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
         units_start = X_Position;   }
 
    if (num >=10 && num<=99){
+       DoneOne = 0;
+       ValidEight = 1;
        units_start = X_Position +Font_Width*1;
        tens_start= X_Position;
       }
 
     if (num >=100 && num<=999){
+       DoneTwo = 0;
+       ValidSeven = 1;
+       ValidEight = 1;
        units_start = X_Position + Font_Width *2;
        tens_start = X_Position + Font_Width*1;
        hundreds_start = X_Position;
       }
 
       if (num >=1000 && num<=9999){             //thousand
+       DoneThree = 0;
+       ValidSix = 1;
+       ValidSeven = 1;
+       ValidEight = 1;
        units_start = X_Position +Font_Width *3;
        tens_start = X_Position + Font_Width *2;
        hundreds_start = X_Position + Font_Width*1;
@@ -1112,6 +887,11 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
        }
 
        if (num >=10000 && num<=99999){            //ten thousand to 99 thousand
+       DoneFour = 0;
+       ValidFive = 1;
+       ValidSix = 1;
+       ValidSeven = 1;
+       ValidEight = 1;
        units_start = X_Position + Font_Width *4;
        tens_start = X_Position +Font_Width *3;
        hundreds_start = X_Position + Font_Width *2;
@@ -1119,7 +899,13 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
        ten_thousands_start = X_Position;
        }
 
-     /*if (num >=100000 && num<=999999){         //100 thousand  to 999 thousand
+       if (num >=100000 && num<=999999){         //100 thousand  to 999 thousand
+       DoneFive = 0;
+       ValidFour = 1;
+       ValidFive = 1;
+       ValidSix = 1;
+       ValidSeven = 1;
+       ValidEight = 1;
        units_start = X_Position + Font_Width *5;
        tens_start = X_Position + Font_Width *4;
        hundreds_start = X_Position + Font_Width *3;
@@ -1129,6 +915,13 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
        }
 
        if (num >=1000000 && num<=9999999){         // 1 million  to 9'999'999
+       DoneSix = 0;
+       ValidThree = 1;
+       ValidFour = 1;
+       ValidFive = 1;
+       ValidSix = 1;
+       ValidSeven = 1;
+       ValidEight = 1;
        units_start = X_Position+ Font_Width *6;
        tens_start = X_Position + Font_Width *5;
        hundreds_start = X_Position +Font_Width *4;
@@ -1139,6 +932,14 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
        }
 
        if (num >=10000000 && num<=99999999){       //ten million to 99 million
+       DoneSeven = 0;
+       ValidTwo = 1;
+       ValidThree = 1;
+       ValidFour = 1;
+       ValidFive = 1;
+       ValidSix = 1;
+       ValidSeven = 1;
+       ValidEight = 1;
        units_start = X_Position+ Font_Width *7;
        tens_start = X_Position + Font_Width *6;
        hundreds_start = X_Position + Font_Width *5;
@@ -1150,6 +951,15 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
        }
 
        if (num >=100000000 && num<=999999999){       //humdred million
+       DoneEight = 0;
+       ValidOne = 1;
+       ValidTwo = 1;
+       ValidThree = 1;
+       ValidFour = 1;
+       ValidFive = 1;
+       ValidSix = 1;
+       ValidSeven = 1;
+       ValidEight = 1;
        units_start = X_Position+ Font_Width *8;
        tens_start = X_Position + Font_Width *7;
        hundreds_start = X_Position + Font_Width *6;
@@ -1163,6 +973,16 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
 
 
        if (num >=1000000000 && num<=4294967295){      //Billion  A Long Will Only Count Up To 4 Billion 4'294'967'295
+       DoneNine = 0;
+       ValidZero = 1;
+       ValidOne = 1;
+       ValidTwo = 1;
+       ValidThree = 1;
+       ValidFour = 1;
+       ValidFive = 1;
+       ValidSix = 1;
+       ValidSeven = 1;
+       ValidEight = 1;
        units_start = X_Position+ Font_Width *9;
        tens_start = X_Position + Font_Width *8;
        hundreds_start = X_Position + Font_Width *7;
@@ -1173,56 +993,67 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
        ten_million_start = X_position+Font_Width*2;
        hundred_million_start = X_Position+Font_Width;
        Billion_Start = X_Position;
-       }*/
+       }
+       
+       
        LongWordTostr(num,numberstring);     // Converts input unsigned long integer number to a string
 
 
-       if (num<10 && done1 !=1){               //Clears The Tens Position Once
-       Write_Number_Space(X_Position + Font_Width,Y_Position, Colour);
-       Done1 = 1;
+       if (num<10 && DoneOne !=1){               //Clears The Tens Position Once
+        Write_Number_Space(X_Position + Font_Width,Y_Position);
+        DoneOne = 1;
+        ValidEight = 0;
        }
 
-      if (num<100 && done2 !=1){             //Clears The Hundreds Position Once
-       Write_Number_Space(X_Position + Font_Width *2,Y_Position, Colour);
-       Done2 = 1;
+      if (num<100 && DoneTwo !=1){             //Clears The Hundreds Position Once
+        Write_Number_Space(X_Position + Font_Width *2,Y_Position);
+        DoneTwo = 1;
+        ValidSeven = 0;
        }
 
-       if (num<1000 && done3 !=1){             //Clears The Thousands Position Once
-       Write_Number_Space(X_Position + Font_Width *3,Y_Position, Colour);
-        Done3 = 1;
+       if (num<1000 && DoneThree !=1){             //Clears The Thousands Position Once
+        Write_Number_Space(X_Position + Font_Width *3,Y_Position);
+        DoneThree = 1;
+        ValidSix = 0;
        }
 
-       if (num<10000 && done4 !=1){           //Clears The ten Thousands Position Once
-       Write_Number_Space(X_Position + Font_Width *4,Y_Position, Colour);
-        done4 ==1;
+       if (num<10000 && DoneFour !=1){           //Clears The Ten Thousands Position Once
+        Write_Number_Space(X_Position + Font_Width *4,Y_Position);
+        DoneFour = 1;
+        ValidFive = 0;
        }
-       
 
-    /*if (num<100000 && Done5 !=1){        //Clears The hundred Thousands Position Once
-     //   Write_Number_Space(X_Position + Font_Width *5,Y_Position, Colour);
-         Done5 = 1;
+
+       if (num<100000 && DoneFive !=1){        //Clears The Hundred Thousands Position Once
+         Write_Number_Space(X_Position + Font_Width *5,Y_Position);
+         DoneFive = 1;
+         ValidFour = 0;
         }
 
-       if (num<1000000 && Done6 !=1){     //Clears The million Position Once
-     //   Write_Number_Space(X_Position + Font_Width *6,Y_Position, Colour);
-        Done6 = 1;
+       if (num<1000000 && DoneSix !=1){     //Clears The million Position Once
+         Write_Number_Space(X_Position + Font_Width *6,Y_Position);
+         DoneSix = 1;
+         ValidThree = 0;
         }
 
-        if (num<10000000 && Done7 !=1){     //Clears Ten million Position Once
-     //   Write_Number_Space(X_Position + Font_Width *7,Y_Position, Colour);
-        Done7 = 1;
+        if (num<10000000 && DoneSeven !=1){     //Clears Ten million Position Once
+         Write_Number_Space(X_Position + Font_Width *7,Y_Position);
+         DoneSeven = 1;
+         ValidTwo = 0;
         }
 
-        if (num<100000000 && Done8 !=1){     //Clears Hundred million Position Once
-     //   Write_Number_Space(X_Position + Font_Width *8,Y_Position, Colour);
-        Done8 = 1;
-        }
+        if (num<100000000 && DoneEight !=1){     //Clears Hundred Million Position Once
+          Write_Number_Space(X_Position + Font_Width *8,Y_Position);
+          DoneEight = 1;
+          ValidOne = 0;
+         }
 
-         if (num<100000000 && Done9 !=1){     //Clears Hundred million Position Once
-     //   Write_Number_Space(X_Position + Font_Width *9,Y_Position, Colour);
-        Done9 = 1;
-        }*/
-        
+        if (num<1000000000 && DoneNine !=1){     //Clears One Billion Position Once
+          Write_Number_Space(X_Position + Font_Width *9,Y_Position);
+          DoneNine = 1;
+          ValidZero = 0;
+         }
+
 
     switch (numberstring[9])  {  //units position
 
@@ -1260,7 +1091,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
     }
 
 
-  if (valid8){
+  if (ValidEight){
      switch (numberstring[8])  { //tens position
 
      case 48:    X_Position = tens_start;
@@ -1297,7 +1128,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
     }}
 
 
-    if (valid7){
+    if (ValidSeven){
      switch (numberstring[7])  {   //hundreds position
 
      case 48:    X_Position = hundreds_start;
@@ -1333,7 +1164,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
      default:    break;
     } }
 
-    if (valid6){
+    if (ValidSix){
      switch (numberstring[6])  {   //thousands position
 
      case 48:    X_Position = thousands_start;
@@ -1370,7 +1201,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
     }}
 
 
-    if (valid5){
+    if (ValidFive){
      switch (numberstring[5])  {   //ten thousands position
 
      case 48:    X_Position = ten_thousands_start;
@@ -1405,8 +1236,8 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
                  break;
      default:    break;
     }}
-    
-   /*if (valid4){
+
+   if (ValidFour){
      switch (numberstring[4])  {   //hundred thousands position
 
      case 48:    X_Position = hundred_thousands_start;
@@ -1442,7 +1273,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
      default:    break;
     }}
 
-     if (valid3){
+     if (ValidThree){
      switch (numberstring[3])  {   //1 million position
 
      case 48:    X_Position = million_start;
@@ -1479,7 +1310,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
     }}
 
 
-      if (valid2){
+      if (ValidTwo){
      switch (numberstring[2])  {   //10 million position
 
      case 48:    X_Position = ten_million_start;
@@ -1515,7 +1346,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
      default:    break;
     }}
 
-      if (valid1){
+      if (ValidOne){
      switch (numberstring[1])  {   //100 million position
 
      case 48:    X_Position = hundred_million_start;
@@ -1551,7 +1382,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
      default:    break;
     }}
 
-    if (valid0){
+    if (ValidZero){
      switch (numberstring[0])  {   //Billion position
 
      case 48:    X_Position = billion_start;
@@ -1585,7 +1416,9 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
                  Write_Number_Nine(X_Position,Y_Position, Colour);
                  break;
      default:    break;
-    }}*/
+    }}
+
+   // return DoneOne;
 }
 
 
@@ -1593,7 +1426,7 @@ void Write_Number(unsigned long num,unsigned int X_Position,unsigned int Y_Posit
 void main(){
 
       //DATASHEET FOR SETTING THE ILI9341 ILITEK DISPLAY IS VERSION 1.11
-      //NEARLY IDENTICAL TO THE ST7735 CONTROLLER SO I COPIED MY OWN CODE TO HERE.
+      //NEARLY IDENTICAL TO THE ST7735 CONTROLLER SO I COPIED MY OWN CODE TO HERE.  John B
 
       unsigned int x = 0;
       Init_MCU();
@@ -1601,16 +1434,29 @@ void main(){
       TFT_RD = 1;
       TFT_WR = 1;
       Initialize_Display();
+      Delay_ms(100);
 
-      TFT_Clear_Screen_ST7735S(0);
+      TFT_Clear_Screen_ST7735S(Black);
 
-
-
-
+        Write_Number_Nine(0,20,Red);           // SAMPLE OF ALL NUMBERS CALLED DIRECTLY
+        Write_Number_Eight(25,20,Lime);
+        Write_Number_Seven(50,20,Yellow);
+        Write_Number_Six(75,20,Lavenderblush);
+        Write_Number_Space(100,20);
+        Write_Number_Five(125,20,Blue);
+        Write_Number_Four(150,20,Green);
+        Write_Number_Three(175,20,Baby_Powder);
+        Write_Number_Two(200,20,Magenta);
+        Write_Number_One(225,20,Violet);
+        Write_Number_Zero(250,20,Orange);
+        
   while(1){
-                         // x  = Rand();
+  
+  
+  
+                         // x  = Rand(); If You Have A Random Function.
 
-                          Write_Number(x,80,80,Lime);
+                          Write_Number(x,8,80,Lime);
                           x++;
 
   }
